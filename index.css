@@ -1,0 +1,43 @@
+body{
+    background-color: #E5E5E5;
+}
+
+header{
+    width: 95%;
+    margin: 0 auto;
+}
+
+main{
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: blueviolet;
+    height: 35rem;
+}
+
+.window-1{
+    display: inline-block;
+    width: 70%;
+    background-color: red;
+    align-items: center;
+    vertical-align: top;   
+}
+
+.window-2{
+    display: inline-block;
+    width: 25%;
+    background-color: white;
+    border-radius: 10px;
+    height: 95%;
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+.window-2 img{
+    width: 100%;
+}
+
+footer{
+    width: 95%;
+    margin: 0 auto;
+}
