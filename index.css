@@ -8,7 +8,7 @@ header{
 }
 
 main{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     background-color: blueviolet;
@@ -20,24 +20,78 @@ main{
     width: 70%;
     background-color: red;
     align-items: center;
-    vertical-align: top;   
+    vertical-align: top;
+    margin-left: 2rem;
 }
 
 .window-2{
     display: inline-block;
-    width: 25%;
-    background-color: white;
-    border-radius: 10px;
+    width: 23%;
     height: 95%;
     margin-top: 0.8rem;
-    margin-left: 0.8rem;
+    margin-left: 2.5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    
 }
 
-.window-2 img{
+.caja-muneico{
+    text-align: center;
+    display: block;
     width: 100%;
+    margin-top: 40%;
+    align-items: center;
 }
+
+.caja-muneico img{
+    display: inline;
+    width: 84%;
+}
+
+.w2-caja-texto{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.w2-caja-texto h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+
+.w2-caja-texto p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+        
+    text-align: center;
+        
+    color: #495057;
+        
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+    
+
 
 footer{
-    width: 95%;
+    text-align: center;
+}
+
+
+.copyright{
     margin: 0 auto;
 }
