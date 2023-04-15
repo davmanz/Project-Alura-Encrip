@@ -71,11 +71,13 @@ main{
 }
 
 .window-2{
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     width: 27.78%;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;    
+    border-radius: 32px;
+    height: 100%; 
 }
 
 .texto-traducido{
@@ -85,19 +87,19 @@ main{
 }
 
 .caja-muneico{
+    margin: 0px auto;
+    margin-top: 40%;
     width: 84%;
     height: 32.20%;
     text-align: center;
-    display: block;
 }
 
 .caja-muneico img{
-    max-width: 100%;
-    height: auto;
+    margin: 0px auto;
+    height: 100%;
 }
 
 .w2-caja-texto{
-    display: block;
     width: 80%;
     height: 32.20%;
     margin: 0px auto;
@@ -105,27 +107,17 @@ main{
 
 .w2-caja-texto h2{
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
-    font-size: 1.3rem;
-    line-height: 120%;
+    font-size: 1.3em;
     text-align: center;
     color: #343A40;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .w2-caja-texto p{
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
     text-align: center;  
     color: #495057;
-    align-self: stretch;
 }
     
 footer{
