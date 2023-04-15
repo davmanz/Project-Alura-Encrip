@@ -20,6 +20,10 @@ main{
     position: absolute;
     top: 7%;
     height: calc(100vh - 15vh);
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
 }
 
 .window-1{
@@ -27,34 +31,32 @@ main{
     width: 65%;
     align-items: center;
     vertical-align: top;
-    margin-left: 2rem;
-    height: 80vh;
-    margin-top: 2vh;
+    height: 100%;
     text-align: center;
+    background-color: aqua;
+    height: 100%;
 }
 
-#comentarios{
-    width: 40vw;
-    margin: 5% auto;
-    text-align: left;
+#prp-text-area{
+    width: 65%;
+    margin: 5% auto 0px auto;
     direction: ltr;
     padding: 20px;
+    height: 50vh;
     caret-color: transparent;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+    font-size: 23px;
     color: #0A3871;
-    background: none;
+    background: white;
     resize: none;
     border: none;
     outline: none;
 }
 
+
 .window-1 input[type=button]{
     padding: 1.5em 8em;
-    margin: auto 22px;
     border-radius: 24px
 }
 
@@ -124,10 +126,14 @@ footer{
     position: absolute;
     bottom: 0%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    width: 100%;
+    height: 8vh;
 }
 
 .copyright{
-    
-    display: block;
-    margin: 0 auto;
+color: chocolate;
+margin: 0 ;
 }
