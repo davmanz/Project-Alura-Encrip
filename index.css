@@ -12,12 +12,14 @@ header img{
 }
 
 main{
+    background-color: brown;
     width: 100%;
     margin: 0 auto;
     align-items: center;
     height: 35rem;
     position: absolute;
     top: 7%;
+    height: calc(100vh - 15vh);
 }
 
 .window-1{
@@ -70,12 +72,10 @@ main{
 
 .window-2{
     display: inline-block;
-    width: 30%;
-    height: 90vh;
+    width: 27.78%;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    
+    border-radius: 32px;    
 }
 
 .texto-traducido{
@@ -85,20 +85,21 @@ main{
 }
 
 .caja-muneico{
+    width: 84%;
+    height: 32.20%;
     text-align: center;
-    display: inline;
-    position: absolute;
-    margin-top: 5rem;
-    margin-right: 1.2rem;
+    display: block;
 }
 
 .caja-muneico img{
-    display: inline;
-    width: 84%;
+    max-width: 100%;
+    height: auto;
 }
 
 .w2-caja-texto{
+    display: block;
     width: 80%;
+    height: 32.20%;
     margin: 0px auto;
 }
 
@@ -129,7 +130,7 @@ main{
     
 footer{
     position: absolute;
-    bottom: 0%;    
+    bottom: 0%;
     text-align: center;
 }
 
