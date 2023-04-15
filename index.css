@@ -11,17 +11,56 @@ main{
     width: 100%;
     margin: 0 auto;
     align-items: center;
-    background-color: blueviolet;
     height: 35rem;
 }
 
 .window-1{
     display: inline-block;
     width: 70%;
-    background-color: red;
     align-items: center;
     vertical-align: top;
     margin-left: 2rem;
+    height: 80vh;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+#comentarios{
+    width: 50vw;
+    height: 40vh;
+    margin: 5% auto;
+    text-align: left;
+    direction: ltr;
+    padding: 20px;
+    caret-color: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    background: none;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.window-1 input[type=button]{
+    padding: 1.5em 8em;
+    margin: auto 22px;
+    border-radius: 24px
+}
+
+.btn-encriptar{
+    color: white;
+    background-color: #0A3871;
+}
+
+.btn-desencriptar{
+    color: ;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
 }
 
 .window-2{
