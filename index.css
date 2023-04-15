@@ -4,7 +4,11 @@ body{
 
 header{
     width: 95%;
-    margin: 0 auto;
+}
+
+header img{
+    margin: 3% 0 0 3%;
+    width: 10%;
 }
 
 main{
@@ -12,11 +16,13 @@ main{
     margin: 0 auto;
     align-items: center;
     height: 35rem;
+    position: absolute;
+    top: 7%;
 }
 
 .window-1{
     display: inline-block;
-    width: 70%;
+    width: 65%;
     align-items: center;
     vertical-align: top;
     margin-left: 2rem;
@@ -26,8 +32,7 @@ main{
 }
 
 #comentarios{
-    width: 50vw;
-    height: 40vh;
+    width: 40vw;
     margin: 5% auto;
     text-align: left;
     direction: ltr;
@@ -57,7 +62,7 @@ main{
 }
 
 .btn-desencriptar{
-    color: ;
+    color: #0A3871 ;
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -65,10 +70,8 @@ main{
 
 .window-2{
     display: inline-block;
-    width: 23%;
-    height: 95%;
-    margin-top: 0.8rem;
-    margin-left: 2.5rem;
+    width: 30%;
+    height: 90vh;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
@@ -119,21 +122,19 @@ main{
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-        
-    text-align: center;
-        
+    text-align: center;  
     color: #495057;
-        
-    flex: none;
-    order: 1;
     align-self: stretch;
-    flex-grow: 0;
 }
     
 footer{
+    position: absolute;
+    bottom: 0%;    
     text-align: center;
 }
 
 .copyright{
+    
+    display: block;
     margin: 0 auto;
 }
