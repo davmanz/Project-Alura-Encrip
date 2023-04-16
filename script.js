@@ -1,52 +1,24 @@
-// Diccionario donde esta la informacion de encriptacio
-  
-  const original= ['a','e','i','o','u']
-  const encrip= ['ai','enter','imes','ober','ufat']
+// Variables de encriptacion
+  const original= ['e','i','a','o','u']
+  const encrip= ['enter','imes','ai','ober','ufat']
 
-//Funcion para encriptar usando el diccionario 
+//Funcion para encriptar
+
 function encriptar(){
-  
   let texto= document.getElementById('prp-text-area').value.toLowerCase();
-  let texto_encriptado = "";
-  
-  for (let i = 0; i < texto.length; i++) {
-    let caracter = texto[i];
-    if (original.includes(caracter)) {
-      let pos_caracter=0;
-      for (let x= 0; x < original.length; x++){
-        if( original[x] == caracter){
-          pos_caracter= x
-          break
-        }else{
-          continue
-        } 
-      }
-      texto_encriptado += encrip[pos_caracter];
-    }else {
-      texto_encriptado += caracter;
-    }
+  let texto_encriptado=texto;
+  for(i=0; i < original.length; i++){
+    texto_encriptado= texto_encriptado.replace(new RegExp(original[i],'g'),encrip[i]);
   }
-
-  alert(texto_encriptado)
-}
-  /*
-  function encriptar(){
-  let texto= document.getElementById('prp-text-area').value.toLowerCase();
-  let texto_encriptado= texto.replace(clave[0],valor[0])
-                             .replace(clave[1],valor[1])
-                             .replace(clave[2],valor[2])
-                             .replace(clave[3],valor[3])
-                             .replace(clave[4],valor[4]);
   alert(texto_encriptado);
   }
-  */
-  
-  function desencriptar(){
+
+//Funcion para desencriptar
+function desencriptar(){
   let texto= document.getElementById('prp-text-area').value.toLowerCase();
-  let texto_desencriptado= texto.replace(encrip[0],original[0])
-                                .replace(encrip[1],original[1])
-                                .replace(encrip[2],original[2])
-                                .replace(encrip[3],original[3])
-                                .replace(encrip[4],original[4]);
+  let texto_desencriptado=texto;
+  for(i=0; i < original.length; i++){
+    texto_desencriptado= texto_desencriptado.replace(new RegExp(encrip[i],'g'),original[i]);
+  }
   alert(texto_desencriptado);
   }
