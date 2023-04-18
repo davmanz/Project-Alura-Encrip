@@ -3,6 +3,7 @@
  const caja_muneico= document.querySelector('#caja-muneico')
  const w2_caja_texto= document.querySelector('#w2-caja-texto')
  const texto_traducido= document.querySelector('#texto-traducido')
+ const btn_copiar= document.querySelector('#btn-copiar')
 
 // Variables de encriptacion
 const original= ['e','i','a','o','u']
@@ -17,7 +18,6 @@ function encriptar(){
   }
   texto_traducido.textContent= texto_encriptado;
   activacion_texto();
-  alert(texto_encriptado);
   }
 
 //Funcion para desencriptar
@@ -34,4 +34,10 @@ function desencriptar(){
     caja_muneico.style.display= 'none';
     w2_caja_texto.style.display= 'none';
     texto_traducido.style.display= 'block';
+    btn_copiar.style.display= 'inline';
+  }
+
+  function copiar(){
+    let copia= texto_traducido.textContent.toLowerCase();
+    navigator.clipboard.writeText(copia);
   }

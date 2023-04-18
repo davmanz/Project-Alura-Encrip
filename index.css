@@ -1,5 +1,7 @@
 body{
     background-color: #E5E5E5;
+    min-width: 320px;   
+    max-width: 1400px; 
 }
 
 header{
@@ -56,9 +58,9 @@ main{
 }
 
 .window-1 input[type=button]{
-    padding: 1.5em 8em;
+    padding: 1.2em ;
     border-radius: 24px;
-    width: 40%;
+    width: 35%;
     font-size: 15px;
 }
 
@@ -106,8 +108,12 @@ main{
 
 .texto-traducido{
     margin: 15% 10% 0 10%;
-    text-align: center;
+    text-align: left;
     display: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #495057;
 }
 
 .caja-muneico{
@@ -143,6 +149,17 @@ main{
     text-align: center;  
     color: #495057;
 }
+
+#btn-copiar{
+    padding: 1.2em;
+    border-radius: 24px;
+    width: 20%;
+    font-size: 15px;
+    display: none;
+    position: absolute;
+    bottom: 4%;
+    margin: 0px ;
+}
     
 footer{
     position: absolute;
@@ -155,7 +172,7 @@ footer{
 }
 
 .copyright{
-margin-top: 1%;
-color: #495057;
-text-shadow: 2px 8px 6px black;
+    margin-top: 1%;
+    color: #495057;
+    text-shadow: 2px 8px 6px black;
 }
