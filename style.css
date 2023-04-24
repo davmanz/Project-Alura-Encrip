@@ -1,7 +1,8 @@
 body{
     background-color: #E5E5E5;
-    min-width: 320px;   
-    max-width: 1400px; 
+    max-width: 1400px;
+    min-width: 1024px;
+    min-height: 480px;
 }
 
 header{
@@ -103,7 +104,10 @@ main{
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-    height: 100%; 
+    height: 100%;
+    align-items:center;
+    justify-content: space-between;
+    padding: 3% 0 3% 0;
 }
 
 .texto-traducido{
@@ -114,25 +118,23 @@ main{
     font-weight: 400;
     font-size: 20px;
     color: #495057;
+    height: 80%;
+    display: none;
 }
 
 .caja-muneico{
-    margin: 0px auto;
-    margin-top: 40%;
     width: 84%;
-    height: 32.20%;
-    text-align: center;
+    order: 1;
 }
 
 .caja-muneico img{
-    margin: 0px auto;
-    height: 100%;
+    width: 100%;
+
 }
 
 .w2-caja-texto{
     width: 80%;
-    height: 32.20%;
-    margin: 0px auto;
+    order: 2; 
 }
 
 .w2-caja-texto h2{
@@ -151,14 +153,12 @@ main{
 }
 
 #btn-copiar{
-    padding: 1.2em;
+    padding: 1.2em 0;
+    text-align: center;
     border-radius: 24px;
-    width: 20%;
+    width: 80%;
     font-size: 15px;
-    display: none;
-    position: absolute;
-    bottom: 4%;
-    margin: 0px ;
+    order: 3;   
 }
     
 footer{

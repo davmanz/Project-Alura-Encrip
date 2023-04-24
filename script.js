@@ -18,6 +18,7 @@ function encriptar(){
   }
   texto_traducido.textContent= texto_encriptado;
   activacion_texto();
+  btn_copiar.disabled= false
   }
 
 //Funcion para desencriptar
