@@ -68,7 +68,6 @@ main{
     transform: scale(1.05);
     margin: 0 5px 0 5px;
     transition: 0.7s;
-
 }
 
 .btn-encriptar{
@@ -195,14 +194,11 @@ footer{
         font-size: 2em;
         margin-top: 2%;
         height: 80vh;
-
-
     }
 
     .window-2{
         height: auto;
         width: 90%;
-        
     }
 
     .texto-traducido{
@@ -217,4 +213,55 @@ footer{
     footer{
         display: flex;
     }
+}
+
+@media (max-width: 375px){
+    header img{
+        width: 15%;
+    }
+    main{
+        flex-direction: column;
+        height: auto;
+         }
+
+    .window-1{
+        height: auto;
+        width: 90%;
+    }
+
+    #prp-text-area{
+        width: 90%;
+        font-size: 2em;
+        margin-top: 2%;
+        height: 80vh;
+    }
+
+    .caja-botones-w1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .window-1 input[type=button]{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .window-2{
+        width: 90%;
+    }
+
+    .texto-traducido{
+       font-size: 1.3em;
+       width: 80%;
+    }
+
+    .caja-muneico{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+    }
+
 }
