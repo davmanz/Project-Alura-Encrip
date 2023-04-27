@@ -64,10 +64,10 @@ main{
     font-size: 15px;
 }
 
-.window-1 input[type=button]:hover{
-    transform: scale(1.05);
-    margin: 0 5px 0 5px;
-    transition: 0.7s;
+.window-1 input[type=button]:active{
+    color: rgb(43, 131, 16);
+    border-width:0.2em;
+    font-weight: 600;
 }
 
 .btn-encriptar{
@@ -157,6 +157,12 @@ main{
     width: 80%;
     font-size: 15px;
     order: 3;   
+}
+
+#btn-copiar:active{
+    color: rgb(43, 131, 16);
+    border-width:0.2em;
+    font-weight: 600;
 }
     
 footer{
