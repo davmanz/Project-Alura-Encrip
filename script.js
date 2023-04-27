@@ -9,26 +9,31 @@
 const original= ['e','i','a','o','u']
 const encrip= ['enter','imes','ai','ober','ufat']
 
+// Funcion para eliminar las mayusculas y los acentos
+function procesar_texto(){
+  let data= box_main.value.toLowerCase();
+  data = data.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return data;
+}
+
 //Funcion para encriptar
 function encriptar(){
-  let texto= box_main.value.toLowerCase();
-  let texto_encriptado=texto;
+  let texto_encriptado= procesar_texto();
   for(i=0; i < original.length; i++){
     texto_encriptado= texto_encriptado.replace(new RegExp(original[i],'g'),encrip[i]);
   }
   texto_traducido.textContent= texto_encriptado;
   activacion_texto();
-  btn_copiar.disabled= false
   }
 
 //Funcion para desencriptar
 function desencriptar(){
-  let texto= box_main.value.toLowerCase();
-  let texto_desencriptado=texto;
+  let texto_desencriptado= procesar_texto();
   for(i=0; i < original.length; i++){
     texto_desencriptado= texto_desencriptado.replace(new RegExp(encrip[i],'g'),original[i]);
   }
-  alert(texto_desencriptado);
+  texto_traducido.textContent= texto_desencriptado;
+  activacion_texto();
   }
 
   function activacion_texto(){
@@ -36,6 +41,7 @@ function desencriptar(){
     w2_caja_texto.style.display= 'none';
     texto_traducido.style.display= 'block';
     btn_copiar.style.display= 'inline';
+    btn_copiar.disabled= false;
   }
 
   function copiar(){
