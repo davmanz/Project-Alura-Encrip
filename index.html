@@ -12,13 +12,18 @@
 
     <header>
         <img src="img/Logo.png" alt="logo">
+        <select id="idioma" class="s-idioma" onchange="c_idioma()">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+        </select>
     </header>\
 
     <main>
     
         <div class="window-1">
             <div>
-                <textarea id="prp-text-area" name="prp-text-area" rows="1" cols="50" placeholder="Ingresa el texto a cifrar"></textarea>
+                <textarea id="prp-text-area" class="prp-text-area" name="prp-text-area" rows="1" cols="50" placeholder="Ingresa el texto a cifrar"></textarea>
             </div>
             
             <div class="w1-obsv">
@@ -37,10 +42,10 @@
                 <img src="img/Muñeco.png" alt="buscando">
             </div>
             <div class="w2-caja-texto" id="w2-caja-texto">
-                <h2>Ningun mensaje fue encontrado</h2>
-                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                <h2 class="aviso-1">Ningun mensaje fue encontrado</h2>
+                <p class="aviso-2">Ingresa el texto que deseas encriptar o desencriptar</p>
             </div>
-            <input type="button" value="Copiar" id="btn-copiar" onclick="copiar()" disabled>
+            <input type="button" value="Copiar" id="btn-copiar" class="btn-copiar" onclick="copiar()" disabled>
         </div>
     </main>
 

@@ -1,6 +1,39 @@
+header img, select{
+    display: block;
+    margin-top: 1%;
+}
+
+.s-idioma {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    color: #555;
+    font-size: 16px;
+    padding: 12px 24px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .s-idioma:hover, .s-idioma:focus {
+    background-color: #e6e6e6;
+    outline: none;
+  }
+  
+  .s-idioma option {
+    background-color: #f2f2f2;
+    color: #555;
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+  
+  .s-idioma option:hover {
+    background-color: #e6e6e6;
+  }
+  
+
 body{
     background-color: #E5E5E5;
-  
 }
 
 header{
@@ -54,7 +87,7 @@ main{
 }
 
 #prp-text-area::placeholder{
-    color: #0A3871;
+    color: rgba(10, 56, 113,0.5);
 }
 
 .window-1 input[type=button]{
@@ -68,6 +101,10 @@ main{
     color: rgb(43, 131, 16);
     border-width:0.2em;
     font-weight: 600;
+}
+
+.window-1 input:hover{
+    cursor: pointer;
 }
 
 .btn-encriptar{
@@ -164,7 +201,8 @@ main{
     border-width:0.2em;
     font-weight: 600;
 }
-    
+
+
 footer{
     text-align: center;
     display: flex;
