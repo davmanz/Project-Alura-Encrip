@@ -49,8 +49,7 @@ const lst_pt=[
   'Digite o texto que deseja criptografar ou descriptografar',
   'Código',
   'Decifrar',
-  'Cópia de',
-  
+  'Cópia de'
 ]
 
 
@@ -63,7 +62,7 @@ function procesar_texto(){
   let data= box_main.value.toLowerCase();
   data = data.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   return data;
-}
+} 
 
 //Funcion para encriptar
 function encriptar(){
