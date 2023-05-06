@@ -60,15 +60,28 @@ body input[type=button]:hover{
 
 body input[type=button]:nth-child(1){
     background-color: #0A3871;
+    color: #D8DFE8;
 }
 
-body input[type=button]:nth-child(2){
+body input[type=button]:nth-child(1):disabled{
+    background-color: rgba(10, 56, 113,0.2);
+}
+
+body input[type=button]:nth-child(2),
+body input[type=button]:nth-child(4){
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+body input[type=button]:nth-child(2):disabled,
+body input[type=button]:nth-child(4):disabled{
+    background-color: rgba(216, 223, 232, 0.2);
+    border: 1px solid rgba(10, 56, 113, 0.5);
 }
 
 body input[type=button]:disabled{
-    color: red;
+    color: rgba(255, 0, 0, 0.5);
     font-weight: bold;
 }
 /* Aqui finalizan los efecto globales de los botones*/
