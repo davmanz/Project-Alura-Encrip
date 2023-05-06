@@ -138,3 +138,15 @@ function desencriptar(){
       }
     }
   }
+
+function activar_btn_principal(){
+if (box_main.value == ''){
+  boton_encriptar.disabled= true;
+  boton_desencriptar.disabled= true;
+}else{
+  boton_encriptar.disabled= false;
+  boton_desencriptar.disabled= false;
+}
+}
+
+box_main.addEventListener('input',activar_btn_principal)

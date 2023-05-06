@@ -31,7 +31,6 @@ header img, select{
     background-color: #e6e6e6;
   }
   
-
 body{
     background-color: #E5E5E5;
 }
@@ -46,6 +45,39 @@ header img{
     margin-top: 2%;
     width: 6%;
 }
+
+/* Efectos globales de los Botones*/
+body input[type=button]{
+    padding: 1.2em ;
+    border-radius: 24px;
+    font-size: 15px;
+}
+
+body input[type=button]:hover{
+    cursor: pointer;
+}
+
+body input[type=button]:nth-child(1){
+    color: white;
+    background-color: #0A3871;
+}
+
+body input[type=button]:nth-child(2){
+    color: #0A3871 ;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+body input[type=button]:not([disabled]){
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+body input[type=button]:disabled{
+    color: red;
+    font-weight: bold;
+}
+/* Aqui finalizan los efecto globales de los botones*/
 
 main{
     width: 100%;
@@ -91,32 +123,7 @@ main{
 }
 
 .window-1 input[type=button]{
-    padding: 1.2em ;
-    border-radius: 24px;
     width: 35%;
-    font-size: 15px;
-}
-
-.window-1 input[type=button]:active{
-    color: rgb(43, 131, 16);
-    border-width:0.2em;
-    font-weight: 600;
-}
-
-.window-1 input:hover{
-    cursor: pointer;
-}
-
-.btn-encriptar{
-    color: white;
-    background-color: #0A3871;
-}
-
-.btn-desencriptar{
-    color: #0A3871 ;
-    background-color: #D8DFE8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
 }
 
 .w1-obsv{
@@ -188,20 +195,10 @@ main{
 }
 
 #btn-copiar{
-    padding: 1.2em 0;
     text-align: center;
-    border-radius: 24px;
     width: 80%;
-    font-size: 15px;
     order: 3;   
 }
-
-#btn-copiar:active{
-    color: rgb(43, 131, 16);
-    border-width:0.2em;
-    font-weight: 600;
-}
-
 
 footer{
     text-align: center;
