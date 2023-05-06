@@ -51,6 +51,7 @@ body input[type=button]{
     padding: 1.2em ;
     border-radius: 24px;
     font-size: 15px;
+    font-weight: bold;
 }
 
 body input[type=button]:hover{
@@ -58,19 +59,12 @@ body input[type=button]:hover{
 }
 
 body input[type=button]:nth-child(1){
-    color: white;
     background-color: #0A3871;
 }
 
 body input[type=button]:nth-child(2){
-    color: #0A3871 ;
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
-}
-
-body input[type=button]:not([disabled]){
-    color: rgb(0, 0, 0);
-    font-weight: bold;
 }
 
 body input[type=button]:disabled{
