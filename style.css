@@ -52,6 +52,7 @@ body input[type=button]{
     border-radius: 24px;
     font-size: 15px;
     font-weight: bold;
+    width: 35%;
 }
 
 body input[type=button]:hover{
@@ -78,6 +79,21 @@ body input[type=button]:nth-child(2):disabled,
 body input[type=button]:nth-child(4):disabled{
     background-color: rgba(216, 223, 232, 0.2);
     border: 1px solid rgba(10, 56, 113, 0.5);
+}
+
+body input[type=button]:nth-child(4){
+    text-align: center;
+    order: 3;
+}
+
+body input[type=button]:nth-child(4):hover{
+    width: 80%;
+    transition: 0.4s;
+}
+
+body input[type=button]:nth-child(4){
+    width: 35%;
+    transition: 0.4s;
 }
 
 body input[type=button]:disabled{
@@ -127,10 +143,6 @@ main{
 
 #prp-text-area::placeholder{
     color: rgba(10, 56, 113,0.5);
-}
-
-.window-1 input[type=button]{
-    width: 35%;
 }
 
 .w1-obsv{
@@ -199,12 +211,6 @@ main{
     font-size: 16px;
     text-align: center;  
     color: #495057;
-}
-
-#btn-copiar{
-    text-align: center;
-    width: 80%;
-    order: 3;   
 }
 
 footer{
