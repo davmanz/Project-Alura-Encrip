@@ -104,6 +104,8 @@ function desencriptar(){
       lst_selectores[0].value= ''
       lst_selectores[0].placeholder= lst_en[0];
 
+      document.title= 'Encryption system'
+
       for(let x=1; x < 4; x++){
         lst_selectores[x].innerHTML= lst_en[x]
       };
@@ -113,6 +115,8 @@ function desencriptar(){
       
     }
     else if(idioma_en_uso === 'pt'){
+
+      document.title= 'Sistema de encriptação'
 
       lst_selectores[0].value= ''
       lst_selectores[0].placeholder= lst_pt[0];
@@ -126,6 +130,8 @@ function desencriptar(){
       }
     }
     else{
+
+      document.title= 'Sistema de Encriptacion'
 
       lst_selectores[0].placeholder= lst_es[0] 
 

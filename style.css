@@ -251,12 +251,13 @@ footer{
         width: 90%;
         font-size: 2em;
         margin-top: 2%;
-        height: 60vh;
+        height: 50vh;
     }
 
     .window-2{
         height: auto;
         width: 90%;
+        margin-top: 5%;
     }
 
     .texto-traducido{
