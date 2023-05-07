@@ -18,7 +18,6 @@ header img, select{
   .s-idioma:hover, .s-idioma:focus {
     background-color: rgba(6, 6, 95, 0.2);
     outline: none;
-    font-weight: bold;
   }
   
   .s-idioma option {
