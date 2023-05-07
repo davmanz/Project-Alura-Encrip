@@ -84,15 +84,11 @@ body input[type=button]:nth-child(4):disabled{
 body input[type=button]:nth-child(4){
     text-align: center;
     order: 3;
+    transition: 0.4s;
 }
 
 body input[type=button]:nth-child(4):hover{
     width: 80%;
-    transition: 0.4s;
-}
-
-body input[type=button]:nth-child(4){
-    width: 35%;
     transition: 0.4s;
 }
 
@@ -230,6 +226,14 @@ footer{
 
 @media (max-width: 768px){
 
+    .window-1 input[type=button]{
+        width: 45%;
+    }
+
+    .window-2 input[type=button]{
+        width:80%;
+    }
+
     header img{
         width: 15%;
     }
@@ -247,7 +251,7 @@ footer{
         width: 90%;
         font-size: 2em;
         margin-top: 2%;
-        height: 80vh;
+        height: 60vh;
     }
 
     .window-2{
@@ -258,6 +262,7 @@ footer{
     .texto-traducido{
        margin: 0 8% 4% 8%;
        font-size: 2em;
+       height: 10vh;
     }
 
     .caja-muneico{
@@ -287,7 +292,7 @@ footer{
         width: 90%;
         font-size: 2em;
         margin-top: 2%;
-        height: 50vh;
+        height: 40vh;
     }
 
     .caja-botones-w1{
